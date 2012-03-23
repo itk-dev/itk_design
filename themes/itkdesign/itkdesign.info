@@ -1,0 +1,42 @@
+; ----- / BASIC INFO / -----
+
+name = 'ITK Design'
+description = 'Theme for the ITK Design website.'
+core = '7.x'
+engine = 'phptemplate'
+screenshot = 'screenshot.png'
+base theme = 'itkore'
+
+; ---- / REQUIRED REGIONS / -----
+
+regions[page_top] = "Page Top"
+regions[page_bottom] = "Page Bottom"
+regions[content] = "Content"
+
+; ----- / CUSTOM REGIONS / -----
+
+regions[branding] = Branding
+regions[menu] = Menu
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[preface_first] = Preface First
+regions[preface_second] = Preface Second
+regions[preface_third] = Preface Third
+regions[preface_fourth] = Preface Fourth
+regions[postscript_first] = Postscript First
+regions[postscript_second] = Postscript Second
+regions[postscript_third] = Postscript Third
+regions[postscript_fourth] = Postscript Fourth
+regions[footer_first] = Footer First
+regions[footer_second] = Footer Second
+regions[footer_third] = Footer Third
+regions[footer_fourth] = Footer Fourth
+
+; ----- / ZONES / -----
+
+zones[header] = 'Header'
+zones[preface] = 'Preface'
+zones[content] = 'Content'
+zones[postscript] = 'Postscript'
+zones[footer] = 'Footer'
+zones[footer_second] = 'Footer second'
