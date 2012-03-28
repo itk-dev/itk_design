@@ -40,3 +40,10 @@ zones[content] = 'Content'
 zones[postscript] = 'Postscript'
 zones[footer] = 'Footer'
 zones[footer_second] = 'Footer second'
+
+
+; ----- / OPTIONAL CSS / -----
+
+css[itkdesign.css][name] = 'ITK Design styles'
+css[itkdesign.css][description] = 'This file holds all the custom CSS of your theme.'
+css[itkdesign.css][options][weight] = '10'
