@@ -1,0 +1,241 @@
+/* line 17, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* See: http://zengrids.com/help/#vars-legacy */
+/* line 52, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.page:before, .page:after {
+  content: "";
+  display: table;
+}
+/* line 56, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.page:after {
+  clear: both;
+}
+
+/* line 18, ../sass/_itkdesign.grid.scss */
+.grid-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* line 12, ../sass/_itkdesign.typography.scss */
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 17, ../sass/_itkdesign.typography.scss */
+a:visited {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+/* line 22, ../sass/_itkdesign.typography.scss */
+a:hover {
+  color: #d23200;
+}
+/* line 26, ../sass/_itkdesign.typography.scss */
+a:focus {
+  color: #d23200;
+}
+
+/* line 9, ../sass/itkdesign.styles.scss */
+body {
+  background: #2b2b2b url("../images/body-background.jpg") center top;
+  color: #fff;
+  font-family: "ff-scala-sans-web-pro", sans-serif;
+}
+
+/* line 15, ../sass/itkdesign.styles.scss */
+.header {
+  background: url("../images/header-background.jpg") fixed;
+  background-size: 100%;
+  height: 420px;
+}
+/* line 20, ../sass/itkdesign.styles.scss */
+.header.fixed {
+  background: rgba(0, 0, 0, 0.8);
+  height: 115px;
+  position: fixed;
+  width: 100%;
+}
+/* line 26, ../sass/itkdesign.styles.scss */
+.header.fixed .logo {
+  margin-top: 32px;
+}
+/* line 30, ../sass/itkdesign.styles.scss */
+.header.fixed .main-menu {
+  margin-top: 45px;
+}
+/* line 34, ../sass/itkdesign.styles.scss */
+.header.fixed .headline {
+  display: none;
+}
+/* line 39, ../sass/itkdesign.styles.scss */
+.header .header-inner {
+  left: 50%;
+  margin-left: -600px;
+  overflow: hidden;
+  position: absolute;
+  width: 1200px;
+}
+/* line 47, ../sass/itkdesign.styles.scss */
+.header .logo {
+  float: left;
+  margin-top: 85px;
+}
+/* line 52, ../sass/itkdesign.styles.scss */
+.header .main-menu {
+  float: right;
+  margin-top: 105px;
+}
+/* line 56, ../sass/itkdesign.styles.scss */
+.header .main-menu a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  margin-right: 20px;
+}
+/* line 62, ../sass/itkdesign.styles.scss */
+.header .main-menu a:hover {
+  border-bottom: 2px dotted #d23200;
+  color: #fff;
+}
+/* line 69, ../sass/itkdesign.styles.scss */
+.header .headline {
+  font-size: 43px;
+  font-weight: 300;
+  line-height: 125%;
+  margin-top: 175px;
+  margin-left: 70px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+/* line 77, ../sass/itkdesign.styles.scss */
+.header .headline .emphasize {
+  color: #d23200;
+}
+
+/* line 83, ../sass/itkdesign.styles.scss */
+.cases {
+  margin-top: -50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1075px;
+}
+/* line 89, ../sass/itkdesign.styles.scss */
+.cases img {
+  vertical-align: bottom;
+}
+/* line 93, ../sass/itkdesign.styles.scss */
+.cases .case-row {
+  clear: both;
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 99, ../sass/itkdesign.styles.scss */
+.cases .case-odd {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 103, ../sass/itkdesign.styles.scss */
+.cases .case-even {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 107, ../sass/itkdesign.styles.scss */
+.cases .case-link {
+  background-color: #fff;
+  color: #1f1f1f;
+  display: block;
+  font-size: 20px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+/* line 118, ../sass/itkdesign.styles.scss */
+.who {
+  background: url("../images/section-who.jpg") fixed;
+  background-size: 100% 100%;
+  height: 200px;
+}

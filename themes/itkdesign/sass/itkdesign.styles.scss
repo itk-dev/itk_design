@@ -1,0 +1,122 @@
+// =============================================================================
+// Basic styling, reset and import
+// =============================================================================
+//
+@import "compass/reset";
+@import "_itkdesign.grid.scss";
+@import "_itkdesign.typography.scss";
+
+body {
+  background: #2b2b2b url("../images/body-background.jpg") center top;
+  color: #fff;
+  font-family: "ff-scala-sans-web-pro", sans-serif;
+}
+
+.header {
+  background: url("../images/header-background.jpg") fixed;
+  background-size: 100%;
+  height: 420px;
+
+  &.fixed {
+    background: transparentize(#000, .2);
+    height: 115px;
+    position: fixed;
+    width: 100%;
+
+    .logo {
+      margin-top: 32px;
+    }
+
+    .main-menu {
+      margin-top: 45px;
+    }
+
+    .headline {
+      display: none;
+    }
+  }
+
+  .header-inner {
+    left: 50%;
+    margin-left: -600px;
+    overflow: hidden;
+    position: absolute;
+    width: 1200px;
+  }
+
+  .logo {
+    float: left;
+    margin-top: 85px;
+  }
+
+  .main-menu {
+    float: right;
+    margin-top: 105px;
+
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      margin-right: 20px;
+
+      &:hover {
+        border-bottom: 2px dotted #d23200;
+        color: #fff;
+      }
+    }
+  }
+
+  .headline {
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 125%;
+    margin-top: 175px;
+    margin-left: 70px;
+    text-shadow: 1px 1px transparentize(#000, .75);
+
+    .emphasize {
+      color: #d23200;
+    }
+  }
+}
+
+.cases {
+  margin-top: -50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1075px;
+
+  img {
+    vertical-align: bottom;
+  }
+
+  .case-row {
+    clear: both;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .case-odd {
+    @include zen-grid-item(6, 1);
+  }
+
+  .case-even {
+    @include zen-grid-item(6, 1, right);
+  }
+
+  .case-link {
+    background-color: #fff;
+    color: #1f1f1f;
+    display: block;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+}
+
+.who {
+  background: url("../images/section-who.jpg") fixed;
+  background-size: 100% 100%;
+  height: 200px;
+}

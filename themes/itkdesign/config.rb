@@ -6,6 +6,7 @@ css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "scripts"
+additional_import_paths = ["/Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets"]
 
 output_style = :expanded
 environment = :development
