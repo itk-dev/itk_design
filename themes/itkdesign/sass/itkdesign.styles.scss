@@ -3,22 +3,27 @@
 // =============================================================================
 //
 @import "compass/reset";
+@import "compass/css3";
+@import "_itkdesign.mixins.scss";
 @import "_itkdesign.grid.scss";
+@import "_itkdesign.font.awesome.scss";
 @import "_itkdesign.typography.scss";
 
 body {
   background: #2b2b2b url("../images/body-background.jpg") center top;
   color: #fff;
   font-family: "ff-scala-sans-web-pro", sans-serif;
+  font-weight: 300;
 }
 
 .header {
   background: url("../images/header-background.jpg") fixed;
   background-size: 100%;
   height: 420px;
+  z-index: 99;
 
   &.fixed {
-    background: transparentize(#000, .2);
+    background: transparentize(#000, .1);
     height: 115px;
     position: fixed;
     width: 100%;
@@ -67,6 +72,7 @@ body {
   }
 
   .headline {
+    color: #fff;
     font-size: 43px;
     font-weight: 300;
     line-height: 125%;
@@ -115,8 +121,58 @@ body {
   }
 }
 
-.who {
+.who-image {
   background: url("../images/section-who.jpg") fixed;
   background-size: 100% 100%;
-  height: 200px;
+  height: 150px;
+}
+
+.who {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1075px;
+  padding-top: 50px;
+}
+
+.employees {
+  margin-top: 50px;
+  text-align: center;
+
+  .employee {
+    display: inline-block;
+    margin-bottom: 50px;
+    text-align: center;
+    vertical-align: top;
+    width: 24%;
+  }
+
+  .employee-image {
+    @include border-radius(50%);
+    @include opacity(.85);
+
+    margin-bottom: 20px;
+
+    &:hover {
+      @include opacity(1);
+      @include filter(sepia(1));
+    }
+  }
+
+  .employee-name {
+    font-size: 125%;
+    margin-bottom: 18px;
+  }
+
+  .employee-position {
+    margin-bottom: 20px;
+  }
+
+  .employee-social {
+    font-size: 125%;
+
+    .employee-twitter,
+    .employee-facebook {
+      margin-right: 20px;
+    }
+  }
 }

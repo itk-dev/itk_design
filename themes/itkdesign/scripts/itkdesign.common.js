@@ -9,7 +9,7 @@
     if ($('body').hasClass('front')) {
 
       // Get calculations for elements position on the page and their sizes
-      var header_pos_relative = '225';
+      var header_pos_relative = '475';
       /**
       * @todo why do we need to have -20px offset ? If they are not there every
       * thing jumps

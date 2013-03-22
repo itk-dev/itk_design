@@ -73,12 +73,126 @@
   <br /><br />
   <br /><br />
 
+  <section class="who-image"></section>
+
   <section class="who">
+    <h2 class="who-headline">Hvem er vi?</h2>
+    <p>ITK Design er en underafdeling af ITK der igen befinder sig under Aarhus Kommune. Vi er fysisk placeret på Hovedbibliotekets 1. sal og har 16 ansatte.</p>
+    <ul class="employees">
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-brian.jpg" class="employee-image"></a>
+        <h3 class="employee-name"><a href="#">Brian Jensen</a></h3>
+        <p class="employee-position">Digital designer / Frontend udvikler</p>
+        <div class="employee-social">
+          <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+        <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image">
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image">
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>
+      <li class="employee">
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+        <p class="employee-position">Farmer / Placeholder</p>
+        <div class="employee-social">
+          <a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
+        </div>
+      </li>      
+    </ul>
   </section>
 
   <br /><br />
   <br /><br />
-  <h2>Hvem er vi?</h2>
   <br /><br />
   <br /><br />
   <br /><br />
