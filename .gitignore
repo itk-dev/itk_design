@@ -11,6 +11,8 @@ nbproject
 .DS_Store
 ._*
 drushrc.php
+*.sql
+themes/itkdesign/.sass-cache
 
 # Unused version control info,
 # Patches, crud
