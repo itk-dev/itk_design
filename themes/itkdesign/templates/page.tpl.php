@@ -3,18 +3,23 @@
 ?>
 
 <div class="page">
-  <header class="header">
-    <div class="header-inner">
+  <section class="top-bar">
+    <div class="top-bar-inner">
       <a href="/" class="logo"><img src="<?php print $theme_path; ?>/logo.png" /></a>
       <nav class="main-menu">
         <a href="#">Ydelser</a>
         <a href="#">Cases</a>
-        <a href="#">Kontakt</a>
+        <a href="#" class="last">Kontakt</a>
       </nav>
+    </div>
+  </section>
+  <header class="header">
+    <div class="header-inner">
       <p class="headline">
         Vi laver Drupal websites, grafisk design,<br />
-        apps <span class="emphasize">&</span> meget mere</p>
+        apps <span class="emphasize">&</span> meget mere
       </p>
+      <p class="sub-headline">Hvad skal vi hjælpe dig med?</p>
     </div>
   </header>
 
@@ -97,7 +102,7 @@
       </li>
       <li class="employee">
         <img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image">
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -105,7 +110,7 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -113,7 +118,7 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -121,7 +126,7 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -129,12 +134,12 @@
       </li>
       <li class="employee">
         <img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image">
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -142,7 +147,7 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -150,7 +155,7 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -158,7 +163,7 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -166,7 +171,7 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -174,7 +179,7 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
@@ -182,12 +187,12 @@
       </li>
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3> 
+                <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
         <p class="employee-position">Farmer / Placeholder</p>
         <div class="employee-social">
           <a href="#" class="employee-facebook"><i class="icon-facebook-sign"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
         </div>
-      </li>      
+      </li>
     </ul>
   </section>
 

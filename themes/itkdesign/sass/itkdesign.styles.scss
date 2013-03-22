@@ -16,47 +16,45 @@ body {
   font-weight: 300;
 }
 
-.header {
-  background: url("../images/header-background.jpg") fixed;
-  background-size: 100%;
-  height: 420px;
-  z-index: 99;
+img {
+  display: inline;
+  height: auto;
+  max-width: 100%;
+}
+
+.top-bar {
+  overflow: hidden;
 
   &.fixed {
     background: transparentize(#000, .1);
-    height: 115px;
     position: fixed;
     width: 100%;
 
     .logo {
-      margin-top: 32px;
+      margin-top: 15px;
+      margin-bottom: 10px;
     }
 
     .main-menu {
-      margin-top: 45px;
-    }
-
-    .headline {
-      display: none;
+      margin-top: 35px;
     }
   }
 
-  .header-inner {
-    left: 50%;
-    margin-left: -600px;
+  .top-bar-inner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1050px;
     overflow: hidden;
-    position: absolute;
-    width: 1200px;
   }
 
   .logo {
     float: left;
-    margin-top: 85px;
+    margin-top: 45px;
   }
 
   .main-menu {
     float: right;
-    margin-top: 105px;
+    margin-top: 65px;
 
     a {
       font-style: normal;
@@ -68,6 +66,30 @@ body {
         border-bottom: 2px dotted #d23200;
         color: #fff;
       }
+
+      &.last {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.header {
+  background: url("../images/header-background.jpg") fixed;
+  background-size: 100%;
+  height: 470px;
+  margin-top: -99px;
+  z-index: 99;
+
+  .header-inner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 900px;
+
+    &.fixed {
+      .headline {
+        display: none;
+      }
     }
   }
 
@@ -76,21 +98,33 @@ body {
     font-size: 43px;
     font-weight: 300;
     line-height: 125%;
-    margin-top: 175px;
-    margin-left: 70px;
     text-shadow: 1px 1px transparentize(#000, .75);
+
+    position: absolute;
+    top: 150px;
 
     .emphasize {
       color: #d23200;
     }
   }
+
+  .sub-headline {
+    color: darken(#fff, 10%);
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 125%;
+
+    position: absolute;
+    top: 300px;
+  }
+
 }
 
 .cases {
   margin-top: -50px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1075px;
+  max-width: 1000px;
 
   img {
     vertical-align: bottom;
@@ -98,8 +132,8 @@ body {
 
   .case-row {
     clear: both;
-    float: left;
     margin-bottom: 20px;
+    overflow: hidden;
   }
 
   .case-odd {
