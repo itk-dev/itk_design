@@ -224,5 +224,7 @@
   <br /><br />
 </div>
 
+<?php print render($page['content']); ?>
+
 <script type="text/javascript" src="//use.typekit.net/iyx5ixk.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
