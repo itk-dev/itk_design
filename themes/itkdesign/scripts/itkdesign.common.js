@@ -32,7 +32,7 @@
 
           // Animate the header making it lower
           header.animate({
-            opacity: 'hide'
+            opacity: '+-10'
           }, 'slow', function() {
             // Animation complete
           });

@@ -229,6 +229,24 @@
   <br /><br />
 </div>
 
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <h3 class="footer-title">Kontakt os</h3>
+      <div class="footer-text">
+        <p>Udfyld formularen nedenunder for at kontakte os, du kan også sende os en e-mail på info@itkdesign.dk.</p>
+        <p>Vil du forbi til en kop kaffe, finder du os her:</p>
+      </div>
+      <div class="footer-address">
+        <strong>ITK Design</strong><br />
+        Hovedbiblioteket, Møllegade 1<br />
+        8000 Aarhus C      
+      </div>
+    </div>
+    <div class="footer-map"><img src="<?php print $theme_path; ?>/images/footer-map.png"></div>
+  </div>
+</footer>
+
 <?php print render($page['content']); ?>
 
 <script type="text/javascript" src="//use.typekit.net/iyx5ixk.js"></script>

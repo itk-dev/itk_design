@@ -7,6 +7,7 @@
 @import "_itkdesign.mixins.scss";
 @import "_itkdesign.grid.scss";
 @import "_itkdesign.font.awesome.scss";
+@import "../font/raleway/stylesheet.css";
 @import "_itkdesign.typography.scss";
 
 body {
@@ -14,6 +15,7 @@ body {
   color: #fff;
   font-family: "ff-scala-sans-web-pro", sans-serif;
   font-weight: 300;
+  line-height: 150%;
 }
 
 img {
@@ -36,7 +38,7 @@ img {
     }
 
     .main-menu {
-      margin-top: 35px;
+      margin-top: 25px;
     }
   }
 
@@ -54,11 +56,11 @@ img {
 
   .main-menu {
     float: right;
+    font-family: "RalewayThin", "ff-scala-sans-web-pro", sans-serif;;
     margin-top: 65px;
 
     a {
-      font-style: normal;
-      font-weight: 500;
+      color: #fff;
       font-size: 22px;
       margin-right: 20px;
 
@@ -77,6 +79,7 @@ img {
 .header {
   background: url("../images/header-background.jpg") fixed;
   background-size: 100%;
+  font-family: "RalewayThin", "ff-scala-sans-web-pro", sans-serif;;
   height: 470px;
   margin-top: -99px;
   z-index: 99;
@@ -208,5 +211,37 @@ img {
     .employee-facebook {
       margin-right: 20px;
     }
+  }
+}
+
+
+.footer {
+  background: url("../images/footer-bg.png");
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  .footer-inner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1075px;
+  }
+
+  .footer-title {
+    font-size: 250%;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .footer-content {
+    @include zen-grid-item(6, 1);
+    
+    margin-bottom: 20px;
+  }
+
+  .footer-map {
+    @include zen-grid-item(6, 1, right);
+    
+    float: right;
   }
 }
