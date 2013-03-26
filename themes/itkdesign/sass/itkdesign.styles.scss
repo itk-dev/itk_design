@@ -81,7 +81,7 @@ img {
   background-size: 100%;
   font-family: "RalewayThin", "ff-scala-sans-web-pro", sans-serif;;
   height: 470px;
-  margin-top: -99px;
+  margin-top: -103px;
   z-index: 99;
 
   .header-inner {
@@ -220,7 +220,7 @@ img {
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
-  
+
   .footer-inner {
     margin-right: auto;
     margin-left: auto;
@@ -235,13 +235,13 @@ img {
 
   .footer-content {
     @include zen-grid-item(6, 1);
-    
+
     margin-bottom: 20px;
   }
 
   .footer-map {
     @include zen-grid-item(6, 1, right);
-    
+
     float: right;
   }
 }
