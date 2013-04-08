@@ -1715,7 +1715,7 @@ a:link {
 }
 /* line 30, ../sass/_itkdesign.typography.scss */
 a:visited {
-  color: #852000;
+  color: #ff5520;
   text-decoration: none;
 }
 /* line 35, ../sass/_itkdesign.typography.scss */
@@ -2082,7 +2082,7 @@ img {
 .who-image {
   background: url("../images/section-who.jpg") fixed;
   background-size: 100% 100%;
-  height: 150px;
+  height: 250px;
 }
 
 /* line 230, ../sass/itkdesign.styles.scss */
