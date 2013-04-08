@@ -1,19 +1,50 @@
-// =============================================================================
-// Basic styling, reset and import
-// =============================================================================
+// -----------------------------------------------------------------------------
+// Compass imports
+// -----------------------------------------------------------------------------
 //
 @import "compass/reset";
 @import "compass/css3";
+
+
+// Import variables, mixins, grid fonts etc.
+@import "_itkdesign.variables.scss";
 @import "_itkdesign.mixins.scss";
 @import "_itkdesign.grid.scss";
 @import "_itkdesign.font.awesome.scss";
 @import "../font/raleway/stylesheet.css";
-@import "_itkdesign.typography.scss";
 
+
+// Typography, forms
+@import "_itkdesign.typography.scss";
+@import "_itkdesign.forms.scss";
+
+
+// ---
+
+
+// -----------------------------------------------------------------------------
+// Extends
+// -----------------------------------------------------------------------------
+//
+%ext-grid-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1050px;
+  overflow: hidden;
+}
+
+
+// ---
+
+
+// -----------------------------------------------------------------------------
+// Basic styling (body, images etc.)
+// -----------------------------------------------------------------------------
+//
 body {
   background: #2b2b2b url("../images/body-background.jpg") center top;
   color: #fff;
-  font-family: "ff-scala-sans-web-pro", sans-serif;
+  font-family: $font-family;
   font-weight: 300;
   line-height: 150%;
 }
@@ -24,12 +55,21 @@ img {
   max-width: 100%;
 }
 
+
+// ---
+
+
+// -----------------------------------------------------------------------------
+// Topbar navigation
+// -----------------------------------------------------------------------------
+//
 .top-bar {
   overflow: hidden;
 
   &.fixed {
     background: transparentize(#000, .1);
     position: fixed;
+    z-index: 99;
     width: 100%;
 
     .logo {
@@ -43,10 +83,7 @@ img {
   }
 
   .top-bar-inner {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1050px;
-    overflow: hidden;
+    @extend %ext-grid-wrapper;
   }
 
   .logo {
@@ -56,7 +93,7 @@ img {
 
   .main-menu {
     float: right;
-    font-family: "RalewayThin", "ff-scala-sans-web-pro", sans-serif;;
+    font-family: $font-family-slim;
     margin-top: 65px;
 
     a {
@@ -76,17 +113,25 @@ img {
   }
 }
 
+
+// ---
+
+
+// -----------------------------------------------------------------------------
+// Header
+// -----------------------------------------------------------------------------
+//
 .header {
   background: url("../images/header-background.jpg") fixed;
   background-size: 100%;
-  font-family: "RalewayThin", "ff-scala-sans-web-pro", sans-serif;;
+  font-family: $font-family-slim;
   height: 470px;
   margin-top: -103px;
   z-index: 99;
 
   .header-inner {
-    margin-right: auto;
-    margin-left: auto;
+    @extend %ext-grid-wrapper;
+
     max-width: 900px;
 
     &.fixed {
@@ -123,10 +168,19 @@ img {
 
 }
 
+
+
+// ---
+
+
+// -----------------------------------------------------------------------------
+// Cases
+// -----------------------------------------------------------------------------
+//
 .cases {
+  @extend %ext-grid-wrapper;
+
   margin-top: -50px;
-  margin-right: auto;
-  margin-left: auto;
   max-width: 1000px;
 
   img {
@@ -158,6 +212,14 @@ img {
   }
 }
 
+
+// ---
+
+
+// -----------------------------------------------------------------------------
+// Who
+// -----------------------------------------------------------------------------
+//
 .who-image {
   background: url("../images/section-who.jpg") fixed;
   background-size: 100% 100%;
@@ -165,9 +227,8 @@ img {
 }
 
 .who {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1075px;
+  @extend %ext-grid-wrapper;
+
   padding-top: 50px;
 }
 
@@ -208,6 +269,18 @@ img {
     font-size: 125%;
 
     .employee-twitter,
+    .employee-facebook,
+    .employee-mail {
+      &:visited {
+        color: $white;
+      }
+
+      &:hover {
+        color: $link-hover;
+      }
+    }
+
+    .employee-twitter,
     .employee-facebook {
       margin-right: 20px;
     }
@@ -215,22 +288,34 @@ img {
 }
 
 
+// ---
+
+
+// -----------------------------------------------------------------------------
+// Footer
+// -----------------------------------------------------------------------------
+//
 .footer {
   background: url("../images/footer-bg.png");
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 
+  .footer-content-wrapper,
+  .footer-form-wrapper {
+    @include zen-grid-item(12, 1);
+    @include zen-clear();
+
+    margin-bottom: 20px;
+  }
+
   .footer-inner {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1075px;
+    @extend %ext-grid-wrapper;
   }
 
   .footer-title {
     font-size: 250%;
     font-weight: 300;
-    margin-bottom: 20px;
   }
 
   .footer-content {
@@ -243,5 +328,10 @@ img {
     @include zen-grid-item(6, 1, right);
 
     float: right;
+  }
+
+  .footer-form-wrapper {
+    border-top: 1px solid lighten(#000, 15%);
+    padding-top: 20px;
   }
 }

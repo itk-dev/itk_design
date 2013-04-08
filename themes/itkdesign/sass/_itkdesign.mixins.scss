@@ -3,11 +3,18 @@
 // =============================================================================
 //
 
+
+// ---
+
+
 // -----------------------------------------------------------------------------
 // Variables
 // -----------------------------------------------------------------------------
 //
 $prefixes: ("-webkit-","-moz-", "-o-", "");
+
+
+// ---
 
 
 // -----------------------------------------------------------------------------
@@ -27,6 +34,9 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
 }
 
 
+// ---
+
+
 // -----------------------------------------------------------------------------
 // Mixin that converts pixel values to rem values
 // ----------------------------------------------------------------------------- 
@@ -41,7 +51,7 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
 //
 @mixin rem($property, $px-values) {
   // Convert the baseline into rems
-  $baseline-rem: $base-font-size / 1rem;
+  $baseline-rem: 16px / 1rem;
   // Print the first line in pixel values
   #{$property}: $px-values;
   // If there is only one (numeric) value, return the property/value line for it.
