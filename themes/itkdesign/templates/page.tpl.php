@@ -46,38 +46,6 @@
     </div>
   </section>
 
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-
   <section class="who-image"></section>
 
   <section class="who">
@@ -195,38 +163,6 @@
       </li>
     </ul>
   </section>
-
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
 </div>
 
 <footer class="footer">

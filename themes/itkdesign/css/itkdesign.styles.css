@@ -2020,19 +2020,20 @@ img {
 /* line 180, ../sass/itkdesign.styles.scss */
 .cases {
   margin-top: -50px;
+  margin-bottom: 200px;
   max-width: 1000px;
 }
-/* line 186, ../sass/itkdesign.styles.scss */
+/* line 187, ../sass/itkdesign.styles.scss */
 .cases img {
   vertical-align: bottom;
 }
-/* line 190, ../sass/itkdesign.styles.scss */
+/* line 191, ../sass/itkdesign.styles.scss */
 .cases .case-row {
   clear: both;
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 196, ../sass/itkdesign.styles.scss */
+/* line 197, ../sass/itkdesign.styles.scss */
 .cases .case-odd {
   float: left;
   width: 50%;
@@ -2049,7 +2050,7 @@ img {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 200, ../sass/itkdesign.styles.scss */
+/* line 201, ../sass/itkdesign.styles.scss */
 .cases .case-even {
   float: right;
   width: 50%;
@@ -2066,7 +2067,7 @@ img {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 204, ../sass/itkdesign.styles.scss */
+/* line 205, ../sass/itkdesign.styles.scss */
 .cases .case-link {
   background-color: #fff;
   color: #1f1f1f;
@@ -2077,24 +2078,24 @@ img {
   text-align: center;
 }
 
-/* line 223, ../sass/itkdesign.styles.scss */
+/* line 224, ../sass/itkdesign.styles.scss */
 .who-image {
   background: url("../images/section-who.jpg") fixed;
   background-size: 100% 100%;
   height: 150px;
 }
 
-/* line 229, ../sass/itkdesign.styles.scss */
+/* line 230, ../sass/itkdesign.styles.scss */
 .who {
   padding-top: 50px;
 }
 
-/* line 235, ../sass/itkdesign.styles.scss */
+/* line 236, ../sass/itkdesign.styles.scss */
 .employees {
   margin-top: 50px;
   text-align: center;
 }
-/* line 239, ../sass/itkdesign.styles.scss */
+/* line 240, ../sass/itkdesign.styles.scss */
 .employees .employee {
   display: inline-block;
   margin-bottom: 50px;
@@ -2102,7 +2103,7 @@ img {
   vertical-align: top;
   width: 24%;
 }
-/* line 247, ../sass/itkdesign.styles.scss */
+/* line 248, ../sass/itkdesign.styles.scss */
 .employees .employee-image {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2111,7 +2112,7 @@ img {
   opacity: 0.85;
   margin-bottom: 20px;
 }
-/* line 253, ../sass/itkdesign.styles.scss */
+/* line 254, ../sass/itkdesign.styles.scss */
 .employees .employee-image:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -2119,45 +2120,45 @@ img {
   -moz-filter: sepia(1);
   filter: sepia(1);
 }
-/* line 259, ../sass/itkdesign.styles.scss */
+/* line 260, ../sass/itkdesign.styles.scss */
 .employees .employee-name {
   font-size: 125%;
   margin-bottom: 18px;
 }
-/* line 264, ../sass/itkdesign.styles.scss */
+/* line 265, ../sass/itkdesign.styles.scss */
 .employees .employee-position {
   margin-bottom: 20px;
 }
-/* line 268, ../sass/itkdesign.styles.scss */
+/* line 269, ../sass/itkdesign.styles.scss */
 .employees .employee-social {
   font-size: 125%;
 }
-/* line 274, ../sass/itkdesign.styles.scss */
+/* line 275, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter:visited,
 .employees .employee-social .employee-facebook:visited,
 .employees .employee-social .employee-mail:visited {
   color: white;
 }
-/* line 278, ../sass/itkdesign.styles.scss */
+/* line 279, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter:hover,
 .employees .employee-social .employee-facebook:hover,
 .employees .employee-social .employee-mail:hover {
   color: #d23200;
 }
-/* line 284, ../sass/itkdesign.styles.scss */
+/* line 285, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter,
 .employees .employee-social .employee-facebook {
   margin-right: 20px;
 }
 
-/* line 298, ../sass/itkdesign.styles.scss */
+/* line 299, ../sass/itkdesign.styles.scss */
 .footer {
   background: url("../images/footer-bg.png");
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 305, ../sass/itkdesign.styles.scss */
+/* line 306, ../sass/itkdesign.styles.scss */
 .footer .footer-content-wrapper,
 .footer .footer-form-wrapper {
   float: left;
@@ -2177,12 +2178,12 @@ img {
   clear: left;
   margin-bottom: 20px;
 }
-/* line 316, ../sass/itkdesign.styles.scss */
+/* line 317, ../sass/itkdesign.styles.scss */
 .footer .footer-title {
   font-size: 250%;
   font-weight: 300;
 }
-/* line 321, ../sass/itkdesign.styles.scss */
+/* line 322, ../sass/itkdesign.styles.scss */
 .footer .footer-content {
   float: left;
   width: 50%;
@@ -2200,7 +2201,7 @@ img {
   _overflow-y: visible;
   margin-bottom: 20px;
 }
-/* line 327, ../sass/itkdesign.styles.scss */
+/* line 328, ../sass/itkdesign.styles.scss */
 .footer .footer-map {
   float: right;
   width: 50%;
@@ -2218,7 +2219,7 @@ img {
   _overflow-y: visible;
   float: right;
 }
-/* line 333, ../sass/itkdesign.styles.scss */
+/* line 334, ../sass/itkdesign.styles.scss */
 .footer .footer-form-wrapper {
   border-top: 1px solid #262626;
   padding-top: 20px;
