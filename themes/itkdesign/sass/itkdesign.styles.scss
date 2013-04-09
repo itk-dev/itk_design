@@ -78,7 +78,7 @@ img {
     }
 
     .main-menu {
-      margin-top: 25px;
+      margin-top: 32px;
     }
   }
 
@@ -207,15 +207,15 @@ img {
       padding-top: $spacing / 1.5;
       padding-bottom: $spacing / 1.5;
       position: absolute;
-      z-index: 99;
+      z-index: 90;
     }
 
     img {
-      height: 457px;
+      height: 400px;
       left: 0;
       margin-top: -100px;
-      margin-left: -145px;
-      max-width: 720px;
+      margin-left: -100px;
+      max-width: 670px;
       position: absolute;
       top: 0;
     }
@@ -223,6 +223,9 @@ img {
     &:hover {
       .case-header {
         background-color: transparentize($black, .2);
+        bottom: 95px;
+        margin-right: 75px;
+        margin-left: 75px;
       }
 
       img {
