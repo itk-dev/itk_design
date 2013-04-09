@@ -184,8 +184,56 @@ img {
   margin-bottom: 200px;
   max-width: 1000px;
 
-  img {
-    vertical-align: bottom;
+  %case {
+
+    .case-link {
+      display: block;
+      height: 247px;
+      overflow: hidden;
+      position: relative;
+      width: 480px;
+    }
+
+    .case-header {
+      background-color: transparentize($black, .75);
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      padding-top: $spacing / 1.5;
+      padding-bottom: $spacing / 1.5;
+      position: absolute;
+      z-index: 99;
+    }
+
+    img {
+      height: 457px;
+      left: 0;
+      margin-top: -100px;
+      margin-left: -145px;
+      max-width: 720px;
+      position: absolute;
+      top: 0;
+    }
+
+    &:hover {
+      .case-header {
+        background-color: transparentize($black, .2);
+      }
+
+      img {
+        @include transition(.1s ease);
+
+        height: 247px;
+        margin-top: 0;
+        margin-left: 0;
+        max-width: 480px;
+      }
+    }
   }
 
   .case-row {
@@ -196,20 +244,12 @@ img {
 
   .case-odd {
     @include zen-grid-item(6, 1);
+    @extend %case;
   }
 
   .case-even {
     @include zen-grid-item(6, 1, right);
-  }
-
-  .case-link {
-    background-color: #fff;
-    color: #1f1f1f;
-    display: block;
-    font-size: 20px;
-    padding-top: 14px;
-    padding-bottom: 12px;
-    text-align: center;
+    @extend %case;
   }
 }
 

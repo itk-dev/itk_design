@@ -26,22 +26,30 @@
   <section class="cases">
     <div class="case-row">
       <article class="case-odd">
-        <a href="#"><img src="<?php print $theme_path; ?>/images/case-digitale-infostandere.jpg" /></a>
-        <a href="" class="case-link">Digitale infostandere</a>
+        <a href="#" class="case-link">
+          <span class="case-header">Digitale infostandere</span>
+          <img src="<?php print $theme_path; ?>/images/case-digitale-infostandere.jpg" />
+        </a>
       </article>
       <article class="case-even">
-        <a href="#"><img src="<?php print $theme_path; ?>/images/case-plakater.jpg" /></a>
-        <a href="" class="case-link">Plakater</a>
+        <a href="#" class="case-link">
+          <span class="case-header">Plakater</span>
+          <img src="<?php print $theme_path; ?>/images/case-plakater.jpg" />
+        </a>
       </article>
     </div>
     <div class="case-row">
       <article class="case-odd">
-        <a href="#"><img src="<?php print $theme_path; ?>/images/case-logoer.jpg" /></a>
-        <a href="" class="case-link">Logoer</a>
+        <a href="#" class="case-link">
+          <span class="case-header">Logoer</span>
+          <img src="<?php print $theme_path; ?>/images/case-logoer.jpg" />
+        </a>
       </article>
       <article class="case-even">
-        <a href="#"><img src="<?php print $theme_path; ?>/images/case-byib.jpg" /></a>
-        <a href="" class="case-link">Website til By i Bevægelse</a>
+        <a href="#" class="case-link">
+          <span class="case-header">Website til By i Bevægelse</span>
+          <img src="<?php print $theme_path; ?>/images/case-byib.jpg" />
+        </a>
       </article>
     </div>
   </section>
