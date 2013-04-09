@@ -222,6 +222,8 @@ img {
 
     &:hover {
       .case-header {
+        @include border-radius(12px);
+
         background-color: transparentize($black, .2);
         bottom: 95px;
         margin-right: 75px;
