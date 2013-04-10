@@ -54,11 +54,12 @@
     </div>
   </section>
 
-  <section class="who-image"></section>
+  <section class="who-image">
+    <h2 class="who-headline">Hvem er vi?</h2>
+    <p>ITK Design er en underafdeling af ITK der igen befinder sig under Aarhus Kommune. Vi er fysisk placeret på Hovedbibliotekets 1. sal og har 16 ansatte.</p>    
+  </section>
 
   <section class="who">
-    <h2 class="who-headline">Hvem er vi?</h2>
-    <p>ITK Design er en underafdeling af ITK der igen befinder sig under Aarhus Kommune. Vi er fysisk placeret på Hovedbibliotekets 1. sal og har 16 ansatte.</p>
     <ul class="employees">
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-brian.jpg" class="employee-image"></a>
