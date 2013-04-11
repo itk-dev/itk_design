@@ -2234,32 +2234,34 @@ img {
 .employees .employee-social {
   font-size: 125%;
 }
-/* line 384, ../sass/itkdesign.styles.scss */
-.employees .employee-social .employee-twitter:visited,
+/* line 385, ../sass/itkdesign.styles.scss */
+.employees .employee-social .employee-twitter:link, .employees .employee-social .employee-twitter:visited,
+.employees .employee-social .employee-facebook:link,
 .employees .employee-social .employee-facebook:visited,
+.employees .employee-social .employee-mail:link,
 .employees .employee-social .employee-mail:visited {
   color: white;
 }
-/* line 388, ../sass/itkdesign.styles.scss */
+/* line 389, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter:hover,
 .employees .employee-social .employee-facebook:hover,
 .employees .employee-social .employee-mail:hover {
   color: #d23200;
 }
-/* line 394, ../sass/itkdesign.styles.scss */
+/* line 395, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter,
 .employees .employee-social .employee-facebook {
   margin-right: 20px;
 }
 
-/* line 408, ../sass/itkdesign.styles.scss */
+/* line 409, ../sass/itkdesign.styles.scss */
 .footer {
   background: url("../images/footer-bg.png");
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 415, ../sass/itkdesign.styles.scss */
+/* line 416, ../sass/itkdesign.styles.scss */
 .footer .footer-content-wrapper,
 .footer .footer-form-wrapper {
   float: left;
@@ -2279,12 +2281,12 @@ img {
   clear: left;
   margin-bottom: 20px;
 }
-/* line 426, ../sass/itkdesign.styles.scss */
+/* line 427, ../sass/itkdesign.styles.scss */
 .footer .footer-title {
   font-size: 250%;
   font-weight: 300;
 }
-/* line 431, ../sass/itkdesign.styles.scss */
+/* line 432, ../sass/itkdesign.styles.scss */
 .footer .footer-content {
   float: left;
   width: 50%;
@@ -2302,7 +2304,7 @@ img {
   _overflow-y: visible;
   margin-bottom: 20px;
 }
-/* line 437, ../sass/itkdesign.styles.scss */
+/* line 438, ../sass/itkdesign.styles.scss */
 .footer .footer-map {
   float: right;
   width: 50%;
@@ -2320,7 +2322,7 @@ img {
   _overflow-y: visible;
   float: right;
 }
-/* line 443, ../sass/itkdesign.styles.scss */
+/* line 444, ../sass/itkdesign.styles.scss */
 .footer .footer-form-wrapper {
   border-top: 1px solid #262626;
   padding-top: 20px;

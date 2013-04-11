@@ -381,6 +381,7 @@ img {
     .employee-twitter,
     .employee-facebook,
     .employee-mail {
+      &:link,
       &:visited {
         color: $white;
       }
