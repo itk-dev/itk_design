@@ -256,6 +256,48 @@ img {
     @include zen-grid-item(6, 1, right);
     @extend %case;
   }
+
+  .cases-load-more {
+    @include rem('font-size', 25px);
+    @extend .icon-repeat;
+
+    float: right;
+    margin-right: 10px;
+
+    .cases-load-more-text {
+      @include rem('line-height', 25px);
+
+      border-bottom: 2px dotted $link-hover;
+      color: #fff;
+      display: inline-block;
+
+      &:hover {
+        border-bottom: 0;
+      }
+    }
+
+    &:before {
+      @include rem('font-size', 35px);
+      @include rem('line-height', 35px);
+
+      color: $link-hover;
+      display: inline;
+      float: left;
+      font-family: $icon-font;
+      margin-top: -4px;
+      margin-right: 10px;
+      margin-bottom: 3px;
+      padding-left: 1px;
+    }
+
+    &.loading {
+      &:before {
+        @extend .icon-spin;
+
+        height: auto;
+      }
+    }
+  }
 }
 
 

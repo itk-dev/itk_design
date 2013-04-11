@@ -185,9 +185,13 @@ a [class*=" icon-"] {
   line-height: .9em;
 }
 /* line 106, ../sass/_itkdesign.font.awesome.scss */
-.btn [class^="icon-"].icon-spin,
-.btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin,
-.nav [class*=" icon-"].icon-spin {
+.btn [class^="icon-"].icon-spin, .btn .cases [class^="icon-"].cases-load-more.loading:before, .cases .btn [class^="icon-"].cases-load-more.loading:before,
+.btn [class*=" icon-"].icon-spin,
+.btn .cases [class*=" icon-"].cases-load-more.loading:before,
+.cases .btn [class*=" icon-"].cases-load-more.loading:before, .nav [class^="icon-"].icon-spin, .nav .cases [class^="icon-"].cases-load-more.loading:before, .cases .nav [class^="icon-"].cases-load-more.loading:before,
+.nav [class*=" icon-"].icon-spin,
+.nav .cases [class*=" icon-"].cases-load-more.loading:before,
+.cases .nav [class*=" icon-"].cases-load-more.loading:before {
   display: inline-block;
 }
 
@@ -311,8 +315,10 @@ ul.icons li [class*=" icon-"] {
   margin-top: .18em;
 }
 /* line 204, ../sass/_itkdesign.font.awesome.scss */
-.btn [class^="icon-"].icon-spin.icon-large,
-.btn [class*=" icon-"].icon-spin.icon-large {
+.btn [class^="icon-"].icon-spin.icon-large, .btn .cases [class^="icon-"].icon-large.cases-load-more.loading:before, .cases .btn [class^="icon-"].icon-large.cases-load-more.loading:before,
+.btn [class*=" icon-"].icon-spin.icon-large,
+.btn .cases [class*=" icon-"].icon-large.cases-load-more.loading:before,
+.cases .btn [class*=" icon-"].icon-large.cases-load-more.loading:before {
   line-height: .8em;
 }
 
@@ -346,7 +352,7 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* line 230, ../sass/_itkdesign.font.awesome.scss */
-.icon-spin {
+.icon-spin, .cases .cases-load-more.loading:before {
   display: inline-block;
   -moz-animation: spin 2s infinite linear;
   -o-animation: spin 2s infinite linear;
@@ -416,22 +422,22 @@ ul.icons li [class*=" icon-"] {
 
 @-moz-document url-prefix() {
   /* line 260, ../sass/_itkdesign.font.awesome.scss */
-  .icon-spin {
+  .icon-spin, .cases .cases-load-more.loading:before {
     height: .9em;
   }
 
   /* line 261, ../sass/_itkdesign.font.awesome.scss */
-  .btn .icon-spin {
+  .btn .icon-spin, .btn .cases .cases-load-more.loading:before, .cases .btn .cases-load-more.loading:before {
     height: auto;
   }
 
   /* line 262, ../sass/_itkdesign.font.awesome.scss */
-  .icon-spin.icon-large {
+  .icon-spin.icon-large, .cases .icon-large.cases-load-more.loading:before {
     height: 1.25em;
   }
 
   /* line 263, ../sass/_itkdesign.font.awesome.scss */
-  .btn .icon-spin.icon-large {
+  .btn .icon-spin.icon-large, .btn .cases .icon-large.cases-load-more.loading:before, .cases .btn .icon-large.cases-load-more.loading:before {
     height: .75em;
   }
 }
@@ -584,7 +590,7 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* line 298, ../sass/_itkdesign.font.awesome.scss */
-.icon-repeat:before {
+.icon-repeat:before, .cases .cases-load-more:before {
   content: "\f01e";
 }
 
@@ -2117,25 +2123,63 @@ img {
   _overflow: hidden;
   _overflow-y: visible;
 }
+/* line 260, ../sass/itkdesign.styles.scss */
+.cases .cases-load-more {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  float: right;
+  margin-right: 10px;
+}
+/* line 267, ../sass/itkdesign.styles.scss */
+.cases .cases-load-more .cases-load-more-text {
+  line-height: 25px;
+  line-height: 1.5625rem;
+  border-bottom: 2px dotted #d23200;
+  color: #fff;
+  display: inline-block;
+}
+/* line 274, ../sass/itkdesign.styles.scss */
+.cases .cases-load-more .cases-load-more-text:hover {
+  border-bottom: 0;
+}
+/* line 279, ../sass/itkdesign.styles.scss */
+.cases .cases-load-more:before {
+  font-size: 35px;
+  font-size: 2.1875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+  color: #d23200;
+  display: inline;
+  float: left;
+  font-family: "FontAwesome";
+  margin-top: -4px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  padding-left: 1px;
+}
+/* line 294, ../sass/itkdesign.styles.scss */
+.cases .cases-load-more.loading:before {
+  height: auto;
+}
 
-/* line 269, ../sass/itkdesign.styles.scss */
+/* line 311, ../sass/itkdesign.styles.scss */
 .who-image {
   background: url("../images/section-who.jpg") fixed;
   background-size: 100% 100%;
   height: 250px;
 }
 
-/* line 279, ../sass/itkdesign.styles.scss */
+/* line 321, ../sass/itkdesign.styles.scss */
 .who {
   padding-top: 50px;
 }
 
-/* line 285, ../sass/itkdesign.styles.scss */
+/* line 327, ../sass/itkdesign.styles.scss */
 .employees {
   margin-top: 50px;
   text-align: center;
 }
-/* line 289, ../sass/itkdesign.styles.scss */
+/* line 331, ../sass/itkdesign.styles.scss */
 .employees .employee {
   display: inline-block;
   margin-bottom: 50px;
@@ -2143,7 +2187,7 @@ img {
   vertical-align: top;
   width: 24%;
 }
-/* line 297, ../sass/itkdesign.styles.scss */
+/* line 339, ../sass/itkdesign.styles.scss */
 .employees .employee-image {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2152,7 +2196,7 @@ img {
   opacity: 0.85;
   margin-bottom: 20px;
 }
-/* line 303, ../sass/itkdesign.styles.scss */
+/* line 345, ../sass/itkdesign.styles.scss */
 .employees .employee-image:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -2160,45 +2204,45 @@ img {
   -moz-filter: sepia(1);
   filter: sepia(1);
 }
-/* line 309, ../sass/itkdesign.styles.scss */
+/* line 351, ../sass/itkdesign.styles.scss */
 .employees .employee-name {
   font-size: 125%;
   margin-bottom: 18px;
 }
-/* line 314, ../sass/itkdesign.styles.scss */
+/* line 356, ../sass/itkdesign.styles.scss */
 .employees .employee-position {
   margin-bottom: 20px;
 }
-/* line 318, ../sass/itkdesign.styles.scss */
+/* line 360, ../sass/itkdesign.styles.scss */
 .employees .employee-social {
   font-size: 125%;
 }
-/* line 324, ../sass/itkdesign.styles.scss */
+/* line 366, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter:visited,
 .employees .employee-social .employee-facebook:visited,
 .employees .employee-social .employee-mail:visited {
   color: white;
 }
-/* line 328, ../sass/itkdesign.styles.scss */
+/* line 370, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter:hover,
 .employees .employee-social .employee-facebook:hover,
 .employees .employee-social .employee-mail:hover {
   color: #d23200;
 }
-/* line 334, ../sass/itkdesign.styles.scss */
+/* line 376, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter,
 .employees .employee-social .employee-facebook {
   margin-right: 20px;
 }
 
-/* line 348, ../sass/itkdesign.styles.scss */
+/* line 390, ../sass/itkdesign.styles.scss */
 .footer {
   background: url("../images/footer-bg.png");
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 355, ../sass/itkdesign.styles.scss */
+/* line 397, ../sass/itkdesign.styles.scss */
 .footer .footer-content-wrapper,
 .footer .footer-form-wrapper {
   float: left;
@@ -2218,12 +2262,12 @@ img {
   clear: left;
   margin-bottom: 20px;
 }
-/* line 366, ../sass/itkdesign.styles.scss */
+/* line 408, ../sass/itkdesign.styles.scss */
 .footer .footer-title {
   font-size: 250%;
   font-weight: 300;
 }
-/* line 371, ../sass/itkdesign.styles.scss */
+/* line 413, ../sass/itkdesign.styles.scss */
 .footer .footer-content {
   float: left;
   width: 50%;
@@ -2241,7 +2285,7 @@ img {
   _overflow-y: visible;
   margin-bottom: 20px;
 }
-/* line 377, ../sass/itkdesign.styles.scss */
+/* line 419, ../sass/itkdesign.styles.scss */
 .footer .footer-map {
   float: right;
   width: 50%;
@@ -2259,7 +2303,7 @@ img {
   _overflow-y: visible;
   float: right;
 }
-/* line 383, ../sass/itkdesign.styles.scss */
+/* line 425, ../sass/itkdesign.styles.scss */
 .footer .footer-form-wrapper {
   border-top: 1px solid #262626;
   padding-top: 20px;

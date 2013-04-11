@@ -52,6 +52,7 @@
         </a>
       </article>
     </div>
+    <a href="#" class="cases-load-more"><span class="cases-load-more-text">Flere cases</span></a>
   </section>
 
   <section class="who-image">
