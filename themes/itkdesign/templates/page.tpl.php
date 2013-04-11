@@ -2,14 +2,15 @@
   $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 ?>
 
-<div class="page">
+<div id="top" class="page">
   <section class="top-bar">
     <div class="top-bar-inner">
       <a href="/" class="logo"><img src="<?php print $theme_path; ?>/logo.png" /></a>
       <nav class="main-menu">
-        <a href="#">Ydelser</a>
-        <a href="#">Cases</a>
-        <a href="#" class="last">Kontakt</a>
+        <a href="#services" class="main-menu-what">Ydelser</a>
+        <a href="#who" class="main-menu-who">Hvem</a>
+        <a href="#top" class="main-menu-cases">Cases</a>
+        <a href="#contact" class="main-menu-contact last">Kontakt</a>
       </nav>
     </div>
   </section>
@@ -55,12 +56,12 @@
     <a href="#" class="cases-load-more"><span class="cases-load-more-text">Flere cases</span></a>
   </section>
 
-  <section class="who-image">
-    <h2 class="who-headline">Hvem er vi?</h2>
-    <p>ITK Design er en underafdeling af ITK der igen befinder sig under Aarhus Kommune. Vi er fysisk placeret på Hovedbibliotekets 1. sal og har 16 ansatte.</p>    
+  <section id="who" class="who-image">
+    <div class="who-headline-wrapper"><h2 class="who-headline">Hvem er vi?</h2></div>
   </section>
 
   <section class="who">
+    <p>ITK Design er en underafdeling af ITK der igen befinder sig under Aarhus Kommune. Vi er fysisk placeret på Hovedbibliotekets 1. sal og har 16 ansatte.</p>
     <ul class="employees">
       <li class="employee">
         <a href="#"><img src="<?php print $theme_path; ?>/images/employee-brian.jpg" class="employee-image"></a>
@@ -71,9 +72,9 @@
         </div>
       </li>
       <li class="employee">
-        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-placeholder.jpg" class="employee-image"></a>
-        <h3 class="employee-name"><a href="#">Lars Langtpokkerivold</a></h3>
-        <p class="employee-position">Farmer / Placeholder</p>
+        <a href="#"><img src="<?php print $theme_path; ?>/images/employee-dorthe.jpg" class="employee-image"></a>
+        <h3 class="employee-name"><a href="#">Dorthe Brandt Larsen</a></h3>
+        <p class="employee-position">Projektleder</p>
         <div class="employee-social">
           <a href="#" class="employee-twitter"><i class="icon-twitter"></i></a><a href="#" class="employee-mail"><i class="icon-envelope-alt"></i></a>
         </div>
@@ -175,7 +176,7 @@
   </section>
 </div>
 
-<footer class="footer">
+<footer id="contact" class="footer">
   <div class="footer-inner">
     <section class="footer-content-wrapper">
       <div class="footer-content">

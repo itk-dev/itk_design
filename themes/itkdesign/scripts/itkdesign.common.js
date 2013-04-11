@@ -6,6 +6,40 @@
   // When ready start the magic
   $(document).ready(function () {
 
+    // -------------------------------------------------------------------------
+    // Navigation scroll to
+    // -------------------------------------------------------------------------
+    //
+
+    // Set variables
+    var scrollToElements = $(".main-menu").find('a');
+
+
+    // Loop through elements
+    scrollToElements.each(function() {
+
+      // When clicked scroll to section
+      $(this).click(function () {
+        $.scrollTo($(this).attr('href'), 1500, {easing: "swing"});
+
+        // Make sure the href is not used
+        return false;
+      });
+    });
+
+
+    // ---
+
+
+    // -------------------------------------------------------------------------
+    // Fixed navigation
+    // -------------------------------------------------------------------------
+    //
+
+
+    // ---
+
+
     // Set variables
     var header = $('.header-inner');
     var navigation = $('.top-bar');
@@ -70,8 +104,7 @@
         }
       });
 
-    }
-    else {  // Not the front page
+    } else { // Not the front page
       // The header is always fixed
       header.addClass('fixed');
     }

@@ -45,8 +45,9 @@ body {
   background: #2b2b2b url("../images/body-background.jpg") center top;
   color: #fff;
   font-family: $font-family;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 150%;
+  line-height: 24px;
 }
 
 img {
@@ -191,7 +192,7 @@ img {
       height: 247px;
       overflow: hidden;
       position: relative;
-      width: 480px;
+      width: 460px;
     }
 
     .case-header {
@@ -243,7 +244,7 @@ img {
 
   .case-row {
     clear: both;
-    margin-bottom: 20px;
+    margin-bottom: $spacing * 2;
     overflow: hidden;
   }
 
@@ -262,7 +263,7 @@ img {
     @extend .icon-repeat;
 
     float: right;
-    margin-right: 10px;
+    margin-right: 30px;
 
     .cases-load-more-text {
       @include rem('line-height', 25px);
@@ -310,10 +311,22 @@ img {
 //
 .who-image {
   background: url("../images/section-who.jpg") fixed;
-  background-size: 100% 100%;
-  height: 250px;
+  background-size: 100% auto;
+  height: 350px;
+  position: relative;
+
+  .who-headline-wrapper {
+    background-color: transparentize($black, .3);
+    border-bottom: 1px solid transparentize($white, .85);
+    bottom: 0;
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+    position: absolute;
+    width: 100%;
+  }
 
   .who-headline {
+    @include text-shadow(0 1px 1px transparentize($black, .3));
     @extend %ext-grid-wrapper;
   }
 }
