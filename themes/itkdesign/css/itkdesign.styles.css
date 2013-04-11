@@ -2191,12 +2191,12 @@ img {
   padding-top: 50px;
 }
 
-/* line 340, ../sass/itkdesign.styles.scss */
+/* line 345, ../sass/itkdesign.styles.scss */
 .employees {
   margin-top: 50px;
   text-align: center;
 }
-/* line 344, ../sass/itkdesign.styles.scss */
+/* line 349, ../sass/itkdesign.styles.scss */
 .employees .employee {
   display: inline-block;
   margin-bottom: 50px;
@@ -2204,7 +2204,7 @@ img {
   vertical-align: top;
   width: 24%;
 }
-/* line 352, ../sass/itkdesign.styles.scss */
+/* line 357, ../sass/itkdesign.styles.scss */
 .employees .employee-image {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2213,7 +2213,7 @@ img {
   opacity: 0.85;
   margin-bottom: 20px;
 }
-/* line 358, ../sass/itkdesign.styles.scss */
+/* line 363, ../sass/itkdesign.styles.scss */
 .employees .employee-image:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -2221,45 +2221,51 @@ img {
   -moz-filter: sepia(1);
   filter: sepia(1);
 }
-/* line 364, ../sass/itkdesign.styles.scss */
+/* line 369, ../sass/itkdesign.styles.scss */
 .employees .employee-name {
   font-size: 125%;
   margin-bottom: 18px;
 }
-/* line 369, ../sass/itkdesign.styles.scss */
+/* line 374, ../sass/itkdesign.styles.scss */
 .employees .employee-position {
   margin-bottom: 20px;
 }
-/* line 373, ../sass/itkdesign.styles.scss */
+/* line 378, ../sass/itkdesign.styles.scss */
 .employees .employee-social {
   font-size: 125%;
 }
-/* line 379, ../sass/itkdesign.styles.scss */
+/* line 384, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter:visited,
 .employees .employee-social .employee-facebook:visited,
 .employees .employee-social .employee-mail:visited {
   color: white;
 }
-/* line 383, ../sass/itkdesign.styles.scss */
+/* line 388, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter:hover,
 .employees .employee-social .employee-facebook:hover,
 .employees .employee-social .employee-mail:hover {
   color: #d23200;
 }
-/* line 389, ../sass/itkdesign.styles.scss */
+/* line 392, ../sass/itkdesign.styles.scss */
+.employees .employee-social .employee-twitter:visited,
+.employees .employee-social .employee-facebook:visited,
+.employees .employee-social .employee-mail:visited {
+  color: white;
+}
+/* line 398, ../sass/itkdesign.styles.scss */
 .employees .employee-social .employee-twitter,
 .employees .employee-social .employee-facebook {
   margin-right: 20px;
 }
 
-/* line 403, ../sass/itkdesign.styles.scss */
+/* line 412, ../sass/itkdesign.styles.scss */
 .footer {
   background: url("../images/footer-bg.png");
   overflow: hidden;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 410, ../sass/itkdesign.styles.scss */
+/* line 419, ../sass/itkdesign.styles.scss */
 .footer .footer-content-wrapper,
 .footer .footer-form-wrapper {
   float: left;
@@ -2279,12 +2285,12 @@ img {
   clear: left;
   margin-bottom: 20px;
 }
-/* line 421, ../sass/itkdesign.styles.scss */
+/* line 430, ../sass/itkdesign.styles.scss */
 .footer .footer-title {
   font-size: 250%;
   font-weight: 300;
 }
-/* line 426, ../sass/itkdesign.styles.scss */
+/* line 435, ../sass/itkdesign.styles.scss */
 .footer .footer-content {
   float: left;
   width: 50%;
@@ -2302,7 +2308,7 @@ img {
   _overflow-y: visible;
   margin-bottom: 20px;
 }
-/* line 432, ../sass/itkdesign.styles.scss */
+/* line 441, ../sass/itkdesign.styles.scss */
 .footer .footer-map {
   float: right;
   width: 50%;
@@ -2320,7 +2326,7 @@ img {
   _overflow-y: visible;
   float: right;
 }
-/* line 438, ../sass/itkdesign.styles.scss */
+/* line 447, ../sass/itkdesign.styles.scss */
 .footer .footer-form-wrapper {
   border-top: 1px solid #262626;
   padding-top: 20px;
