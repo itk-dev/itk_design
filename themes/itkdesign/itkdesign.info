@@ -13,6 +13,7 @@
 
 ;----------// JavaScripts
   ; Import javascripts.
+  scripts[] = scripts/html5shiv.js
   scripts[] = scripts/jquery.ui.effects.min.js
   scripts[] = scripts/jquery.scrollto.min.js
   scripts[] = scripts/itkdesign.common.js

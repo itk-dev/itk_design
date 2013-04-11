@@ -195,9 +195,16 @@
     </section>
     <section class="footer-form-wrapper">
       <form>
-        <input type="text" name="name" class="footer-form-name">
-        <input type="email" name="email" class="footer-form-email">
-        <textarea class="footer-form-message"></textarea>
+        <div class="footer-form-info">
+          <label for="footer-form-name" class="footer-form-label">Navn</label>
+          <input id="footer-form-name" type="text" name="name" class="footer-form-input-name">
+          <label for="footer-form-email" class="footer-form-label">E-mail</label>
+          <input id="footer-form-email" type="email" name="email" class="footer-form-input-email">
+        </div>
+        <div class="footer-form-message">
+          <label for="footer-form-message" class="footer-form-label">Besked</label>
+          <textarea id="footer-form-message" class="footer-form-input-message"></textarea>
+        </div>
       </form>
     </section>
   </div>

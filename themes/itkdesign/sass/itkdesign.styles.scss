@@ -444,5 +444,28 @@ img {
   .footer-form-wrapper {
     border-top: 1px solid lighten(#000, 15%);
     padding-top: 20px;
+
+    .footer-form-info {
+      @include zen-grid-item(6, 1);
+    }
+
+    .footer-form-message {
+      @include zen-grid-item(6, 1, right);
+    }
+
+    .footer-form-input-name,
+    .footer-form-input-email,
+    .footer-form-input-message {
+      margin-bottom: $spacing;
+      width: 100%;
+    }
+
+    .footer-form-input-message {
+      height: 149px;
+    }
+    
+    .footer-form-label {
+      color: $gray-darker;
+    }
   }
 }

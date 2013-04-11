@@ -1874,7 +1874,7 @@ textarea {
   font-family: "RalewayThin", "ff-scala-sans-web-pro", sans-serif;
   min-height: 10px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 13.33333px;
   max-width: 99%;
 }
 /* line 66, ../sass/_itkdesign.forms.scss */
@@ -1889,11 +1889,14 @@ input[type="tel"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 textarea:focus {
+  -webkit-box-shadow: #d23200 0 0 8px;
+  -moz-box-shadow: #d23200 0 0 8px;
+  box-shadow: #d23200 0 0 8px;
   background-color: #f2f2f2;
   border-color: #e6e6e6;
   color: black;
 }
-/* line 72, ../sass/_itkdesign.forms.scss */
+/* line 74, ../sass/_itkdesign.forms.scss */
 input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="date"][disabled],
@@ -2326,4 +2329,53 @@ img {
 .footer .footer-form-wrapper {
   border-top: 1px solid #262626;
   padding-top: 20px;
+}
+/* line 448, ../sass/itkdesign.styles.scss */
+.footer .footer-form-wrapper .footer-form-info {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 452, ../sass/itkdesign.styles.scss */
+.footer .footer-form-wrapper .footer-form-message {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 458, ../sass/itkdesign.styles.scss */
+.footer .footer-form-wrapper .footer-form-input-name,
+.footer .footer-form-wrapper .footer-form-input-email,
+.footer .footer-form-wrapper .footer-form-input-message {
+  margin-bottom: 20px;
+  width: 100%;
+}
+/* line 463, ../sass/itkdesign.styles.scss */
+.footer .footer-form-wrapper .footer-form-input-message {
+  height: 149px;
+}
+/* line 467, ../sass/itkdesign.styles.scss */
+.footer .footer-form-wrapper .footer-form-label {
+  color: #959595;
 }
