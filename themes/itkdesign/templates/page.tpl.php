@@ -7,9 +7,9 @@
     <div class="top-bar-inner">
       <a href="/" class="logo"><img src="<?php print $theme_path; ?>/logo.png" /></a>
       <nav class="main-menu">
-        <a href="#services" class="main-menu-what" rel="0">Ydelser</a>
-        <a href="#who" class="main-menu-who" rel="49">Hvem</a>
         <a href="#top" class="main-menu-cases" rel="0">Cases</a>
+        <a href="#who" class="main-menu-who" rel="49">Hvem</a>
+        <a href="#services" class="main-menu-what" rel="0">Ydelser</a>
         <a href="#contact" class="main-menu-contact last" rel="-205">Kontakt</a>
       </nav>
     </div>
