@@ -14,24 +14,21 @@
     // Set variables
     var scroll_to_elements = $(".main-menu").find('a');
 
-
     // Loop through elements
     scroll_to_elements.each(function() {
 
       // Get the top offset
       var element_top = $($(this).attr('href')).offset();
 
-      // Set the final value to scroll to
+      // Make sure the offset is not null
       if (element_top !== null) {
 
         // Value from the rel tag used for tweaking scroll to
         var element_top_tweak = parseInt($(this).attr('rel'), 10);
 
-        console.log(element_top_tweak);
-
+        // Set the final value to scroll to
         var element_top_scroll_to = element_top.top + element_top_tweak;
 
-        console.log(element_top_scroll_to);
       }
 
       // When clicked scroll to section

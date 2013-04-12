@@ -36,6 +36,11 @@
   overflow: hidden;
 }
 
+%section {
+  padding-right: $spacing / 2;
+  padding-left: $spacing / 2;
+}
+
 %section-headline {
   background-color: transparentize($black, .3);
   border-bottom: 1px solid transparentize($white, .85);
@@ -504,7 +509,7 @@ img {
 
     .footer-form-button-wrapper {
       @include zen-clear();
-      
+
       padding-right: 14px;
       text-align: right;
     }
