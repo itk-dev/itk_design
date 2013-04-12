@@ -7,10 +7,10 @@
     <div class="top-bar-inner">
       <a href="/" class="logo"><img src="<?php print $theme_path; ?>/logo.png" /></a>
       <nav class="main-menu">
-        <a href="#services" class="main-menu-what">Ydelser</a>
-        <a href="#who" class="main-menu-who">Hvem</a>
-        <a href="#top" class="main-menu-cases">Cases</a>
-        <a href="#contact" class="main-menu-contact last">Kontakt</a>
+        <a href="#services" class="main-menu-what" rel="0">Ydelser</a>
+        <a href="#who" class="main-menu-who" rel="49">Hvem</a>
+        <a href="#top" class="main-menu-cases" rel="0">Cases</a>
+        <a href="#contact" class="main-menu-contact last" rel="-205">Kontakt</a>
       </nav>
     </div>
   </section>
@@ -176,11 +176,14 @@
   </section>
 </div>
 
-<footer id="contact" class="footer">
+<section id="contact" class="contact-image">
+  <div class="contact-headline-wrapper"><h2 class="contact-headline">Kontakt os</h2></div>
+</section>
+
+<footer class="footer">
   <div class="footer-inner">
     <section class="footer-content-wrapper">
       <div class="footer-content">
-        <h3 class="footer-title">Kontakt os</h3>
         <div class="footer-text">
           <p>Udfyld formularen nedenunder for at kontakte os, du kan også sende os en e-mail på <a href="#">info@itkdesign.dk</a>.</p>
           <p>Vil du forbi til en kop kaffe, finder du os her:</p>
@@ -188,7 +191,8 @@
         <div class="footer-address">
           <strong>ITK Design</strong><br />
           Hovedbiblioteket, Møllegade 1<br />
-          8000 Aarhus C
+          <p>8000 Aarhus C</p>
+          <p>Du finder os på første sal på venstre hånd.</p>
         </div>
       </div>
       <div class="footer-map"><img src="<?php print $theme_path; ?>/images/footer-map.png"></div>
@@ -205,6 +209,7 @@
           <label for="footer-form-message" class="footer-form-label">Besked</label>
           <textarea id="footer-form-message" class="footer-form-input-message"></textarea>
         </div>
+        <div class="footer-form-button-wrapper"><a href="#" class="footer-form-button">Send</a></div>
       </form>
     </section>
   </div>

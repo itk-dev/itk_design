@@ -64,7 +64,7 @@ textarea {
   max-width: 99%;
 
   &:focus {
-    @include box-shadow($theme-color 0 0 8px);
+    @include box-shadow(#7fa937 0 0 8px);
     
     background-color: darken($form-background-color, 5%);
     border-color: darken($form-background-color, 10%);

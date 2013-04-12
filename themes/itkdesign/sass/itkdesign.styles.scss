@@ -18,6 +18,9 @@
 @import "_itkdesign.typography.scss";
 @import "_itkdesign.forms.scss";
 
+// Buttons
+@import "_itkdesign.buttons.scss";
+
 
 // ---
 
@@ -31,6 +34,16 @@
   margin-left: auto;
   max-width: 1050px;
   overflow: hidden;
+}
+
+%section-headline {
+  background-color: transparentize($black, .3);
+  border-bottom: 1px solid transparentize($white, .85);
+  bottom: 0;
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+  position: absolute;
+  width: 100%;
 }
 
 
@@ -65,6 +78,7 @@ img {
 // -----------------------------------------------------------------------------
 //
 .top-bar {
+  border-bottom: 1px solid transparentize($white, .65);
   overflow: hidden;
 
   &.fixed {
@@ -316,13 +330,7 @@ img {
   position: relative;
 
   .who-headline-wrapper {
-    background-color: transparentize($black, .3);
-    border-bottom: 1px solid transparentize($white, .85);
-    bottom: 0;
-    padding-top: $spacing;
-    padding-bottom: $spacing;
-    position: absolute;
-    width: 100%;
+    @extend %section-headline;
   }
 
   .who-headline {
@@ -403,6 +411,32 @@ img {
 
 
 // -----------------------------------------------------------------------------
+// Contact us
+// -----------------------------------------------------------------------------
+//
+.contact-image {
+  background: url("../images/section-contact.jpg") fixed;
+  background-size: 100% auto;
+  height: 118px;
+  position: relative;
+
+  .contact-headline-wrapper {
+    @extend %section-headline;
+
+    border-top: 1px solid transparentize($white, .85);
+  }
+
+  .contact-headline {
+    @include text-shadow(0 1px 1px transparentize($black, .3));
+    @extend %ext-grid-wrapper;
+  }
+}
+
+
+// ---
+
+
+// -----------------------------------------------------------------------------
 // Footer
 // -----------------------------------------------------------------------------
 //
@@ -410,7 +444,7 @@ img {
   background: url("../images/footer-bg.png");
   overflow: hidden;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 350px;
 
   .footer-content-wrapper,
   .footer-form-wrapper {
@@ -463,9 +497,22 @@ img {
     .footer-form-input-message {
       height: 149px;
     }
-    
+
     .footer-form-label {
       color: $gray-darker;
+    }
+
+    .footer-form-button-wrapper {
+      @include zen-clear();
+      
+      padding-right: 14px;
+      text-align: right;
+    }
+
+    .footer-form-button {
+      @extend %button-action;
+
+      font-size: 150%;
     }
   }
 }

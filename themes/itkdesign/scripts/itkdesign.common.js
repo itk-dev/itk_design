@@ -12,15 +12,31 @@
     //
 
     // Set variables
-    var scrollToElements = $(".main-menu").find('a');
+    var scroll_to_elements = $(".main-menu").find('a');
 
 
     // Loop through elements
-    scrollToElements.each(function() {
+    scroll_to_elements.each(function() {
+
+      // Get the top offset
+      var element_top = $($(this).attr('href')).offset();
+
+      // Set the final value to scroll to
+      if (element_top !== null) {
+
+        // Value from the rel tag used for tweaking scroll to
+        var element_top_tweak = parseInt($(this).attr('rel'), 10);
+
+        console.log(element_top_tweak);
+
+        var element_top_scroll_to = element_top.top + element_top_tweak;
+
+        console.log(element_top_scroll_to);
+      }
 
       // When clicked scroll to section
       $(this).click(function () {
-        $.scrollTo($(this).attr('href'), 1500, {easing: "swing"});
+        $.scrollTo(element_top_scroll_to, 1250, {easing: "swing"});
 
         // Make sure the href is not used
         return false;
