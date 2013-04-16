@@ -7,51 +7,11 @@
   $(document).ready(function () {
 
     // -------------------------------------------------------------------------
-    // Navigation scroll to
-    // -------------------------------------------------------------------------
-    //
-
-    // Set variables
-    var scroll_to_elements = $(".main-menu").find('a');
-
-    // Loop through elements
-    scroll_to_elements.each(function() {
-
-      // Get the top offset
-      var element_top = $($(this).attr('href')).offset();
-
-      // Make sure the offset is not null
-      if (element_top !== null) {
-
-        // Value from the rel tag used for tweaking scroll to
-        var element_top_tweak = parseInt($(this).attr('rel'), 10);
-
-        // Set the final value to scroll to
-        var element_top_scroll_to = element_top.top + element_top_tweak;
-
-      }
-
-      // When clicked scroll to section
-      $(this).click(function () {
-        $.scrollTo(element_top_scroll_to, 1250, {easing: "swing"});
-
-        // Make sure the href is not used
-        return false;
-      });
-    });
-
-
-    // ---
-
-
-    // -------------------------------------------------------------------------
     // Fixed navigation
     // -------------------------------------------------------------------------
     //
 
-
     // ---
-
 
     // Set variables
     var header = $('.header-inner');
@@ -69,7 +29,7 @@
       // Used to keep track of header fixed state
       var is_navigation_fixed = false;
 
-      // Hook into window scroll event (it will fire when attched if window is
+      // Hook into iwindow scroll event (it will fire when attched f window is
       // scrolled down)
       $(window).scroll(function() {
         var top = $(window).scrollTop();
@@ -122,6 +82,84 @@
       header.addClass('fixed');
     }
 
-  });
+    // Trigger a scroll event when page load.
+    // So navigation is shown if page is reloaden when user is scrolled down on page.
+    $(window).scroll();
+
+    // -------------------------------------------------------------------------
+    // Navigation scroll to and update active class
+    // -------------------------------------------------------------------------
+    //
+
+    //Get Sections top position
+    function getTargetTop(elem){
+        //gets the id of the section header
+        //from the navigation's href e.g. ("#html")
+        var id = elem.attr("href");
+        var section_offset = parseInt(elem.attr('rel'), 10);
+        var top_pos = $(window).scrollTop();
+        var nav_offset = 0;
+
+        //Height of the navigation
+        if (top_pos <= 0) {
+          nav_offset = 104 + section_offset;
+        } else {
+          nav_offset = 0 + section_offset;
+        }
+
+        //Gets the distance from the top and
+        //subtracts the height of the nav.
+        return $(id).offset().top - nav_offset;
+    }
+
+    //Smooth scroll when user click link that starts with #
+    $('.main-menu a[href^="#"]').click(function(event) {
+        //gets the distance from the top of the
+        //section refenced in the href.
+        var target = getTargetTop($(this));
+
+        //scrolls to that section.
+        $('html, body').animate({scrollTop:target}, 1000);
+
+        //prevent the browser from jumping down to section.
+        event.preventDefault();
+    });
+
+    //Pulling sections from main nav.
+    var sections = $('.main-menu a[href^="#"]');
+
+    // Go through each section to see if it's at the top.
+    // if it is add an active class
+    function checkSectionSelected(scrolledTo){
+        //How close the top has to be to the section.
+        var threshold = 200;
+
+        var i;
+
+        for (i = 0; i < sections.length; i++) {
+            //get next nav item
+            var section = $(sections[i]);
+            //get the distance from top
+            var target = getTargetTop(section);
+            //Check if section is at the top of the page.
+            if (scrolledTo > target - threshold && scrolledTo < target + threshold) {
+
+                //remove all selected elements
+                sections.removeClass("active");
+
+                //add current selected element.
+                section.addClass("active");
+            }
+        }
+    }
+
+    //Check if page is already scrolled to a section.
+    checkSectionSelected($(window).scrollTop());
+
+    $(window).scroll(function(){
+        checkSectionSelected($(window).scrollTop());
+    });
+
+  }); // EOF document.ready()
 
 })(jQuery);

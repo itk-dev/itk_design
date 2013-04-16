@@ -7,10 +7,10 @@
     <div class="top-bar-inner">
       <a href="/" class="logo"><img src="<?php print $theme_path; ?>/logo.png" /></a>
       <nav class="main-menu">
-        <a href="#top" class="main-menu-cases" rel="0">Cases</a>
-        <a href="#who" class="main-menu-who" rel="49">Hvem</a>
-        <a href="#services" class="main-menu-what" rel="0">Ydelser</a>
-        <a href="#contact" class="main-menu-contact last" rel="-205">Kontakt</a>
+        <a href="#top" rel="0" class="main-menu-cases">Cases</a>
+        <a href="#who" rel="83" class="main-menu-who">Hvem</a>
+        <a href="#services" rel="83" class="main-menu-what">Ydelser</a>
+        <a href="#contact" rel="83" class="main-menu-contact last">Kontakt</a>
       </nav>
     </div>
   </section>
@@ -173,6 +173,14 @@
         </div>
       </li>
     </ul>
+  </section>
+
+  <section id="services" class="services-image">
+    <div class="services-headline-wrapper"><h2 class="services-headline">Services</h2></div>
+  </section>
+
+  <section class="services">
+    <p>Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
   </section>
 </div>
 

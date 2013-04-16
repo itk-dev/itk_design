@@ -85,6 +85,7 @@ img {
 .top-bar {
   border-bottom: 1px solid transparentize($white, .65);
   overflow: hidden;
+  //position: fixed;
 
   &.fixed {
     background: transparentize(#000, .1);
@@ -121,7 +122,8 @@ img {
       font-size: 22px;
       margin-right: 20px;
 
-      &:hover {
+      &:hover,
+      &.active {
         border-bottom: 2px dotted #d23200;
         color: #fff;
       }
@@ -411,6 +413,36 @@ img {
   }
 }
 
+
+// ---
+
+// -----------------------------------------------------------------------------
+// Services
+// -----------------------------------------------------------------------------
+//
+.services-image {
+  background: url("../images/section-contact.jpg") fixed;
+  background-size: 100% auto;
+  height: 118px;
+  position: relative;
+
+  .services-headline-wrapper {
+    @extend %section-headline;
+
+    border-top: 1px solid transparentize($white, .85);
+  }
+
+  .services-headline {
+    @include text-shadow(0 1px 1px transparentize($black, .3));
+    @extend %ext-grid-wrapper;
+  }
+}
+
+.services {
+  @extend %ext-grid-wrapper;
+
+  padding-top: 50px;
+}
 
 // ---
 
