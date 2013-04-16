@@ -8,7 +8,7 @@
       <a href="/" class="logo"><img src="<?php print $theme_path; ?>/logo.png" /></a>
       <nav class="main-menu">
         <a href="#top" rel="0" class="main-menu-cases">Cases</a>
-        <a href="#who" rel="83" class="main-menu-who">Hvem</a>
+        <a href="#who" rel="-149" class="main-menu-who">Hvem</a>
         <a href="#services" rel="83" class="main-menu-what">Ydelser</a>
         <a href="#contact" rel="83" class="main-menu-contact last">Kontakt</a>
       </nav>
