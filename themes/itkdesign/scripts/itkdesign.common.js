@@ -86,43 +86,50 @@
     // So navigation is shown if page is reloaden when user is scrolled down on page.
     $(window).scroll();
 
+
     // -------------------------------------------------------------------------
     // Navigation scroll to and update active class
     // -------------------------------------------------------------------------
     //
 
+    // ---
+
     //Get Sections top position
     function getTargetTop(elem){
-        //gets the id of the section header
-        //from the navigation's href e.g. ("#html")
-        var id = elem.attr("href");
-        var section_offset = parseInt(elem.attr('rel'), 10);
-        var top_pos = $(window).scrollTop();
-        var nav_offset = 0;
+      //gets the id of the section header
+      //from the navigation's href e.g. ("#html")
+      var id = elem.attr("href");
+      var section_offset = parseInt(elem.attr('rel'), 10);
+      var top_pos = $(window).scrollTop();
+      var nav_offset = 0;
 
-        //Height of the navigation
-        if (top_pos <= 0) {
-          nav_offset = 104 + section_offset;
-        } else {
-          nav_offset = 0 + section_offset;
-        }
+      //Height of the navigation
+      if (top_pos <= 0) {
+        nav_offset = 104 + section_offset;
+      } else {
+        nav_offset = 0 + section_offset;
+      }
 
-        //Gets the distance from the top and
-        //subtracts the height of the nav.
-        return $(id).offset().top - nav_offset;
+      //Gets the distance from the top and
+      //subtracts the height of the nav.
+      return $(id).offset().top - nav_offset;
     }
 
     //Smooth scroll when user click link that starts with #
     $('.main-menu a[href^="#"]').click(function(event) {
-        //gets the distance from the top of the
-        //section refenced in the href.
-        var target = getTargetTop($(this));
+      //gets the distance from the top of the
+      //section refenced in the href.
+      var target = getTargetTop($(this));
 
-        //scrolls to that section.
-        $('html, body').animate({scrollTop:target}, 1000);
+      //scrolls to that section. Turning off scrollHandler while doing so.
+      $(window).off("scroll", scrollHandler);
+      $('html, body').animate({scrollTop:target}, 1000,
+        function() {
+          $(window).on("scroll", scrollHandler);
+        });
 
-        //prevent the browser from jumping down to section.
-        event.preventDefault();
+      //prevent the browser from jumping down to section.
+      event.preventDefault();
     });
 
     //Pulling sections from main nav.
@@ -131,34 +138,36 @@
     // Go through each section to see if it's at the top.
     // if it is add an active class
     function checkSectionSelected(scrolledTo){
-        //How close the top has to be to the section.
-        var threshold = 200;
+      //How close the top has to be to the section.
+      var threshold = 200;
 
-        var i;
+      var i;
 
-        for (i = 0; i < sections.length; i++) {
-            //get next nav item
-            var section = $(sections[i]);
-            //get the distance from top
-            var target = getTargetTop(section);
-            //Check if section is at the top of the page.
-            if (scrolledTo > target - threshold && scrolledTo < target + threshold) {
+      for (i = 0; i < sections.length; i++) {
+        //get next nav item
+        var section = $(sections[i]);
+        //get the distance from top
+        var target = getTargetTop(section);
+        //Check if section is at the top of the page.
+        if (scrolledTo > target - threshold && scrolledTo < target + threshold) {
+          //remove all selected elements
+          sections.removeClass("active");
 
-                //remove all selected elements
-                sections.removeClass("active");
-
-                //add current selected element.
-                section.addClass("active");
-            }
+          //add current selected element.
+          section.addClass("active");
         }
+      }
     }
 
     //Check if page is already scrolled to a section.
     checkSectionSelected($(window).scrollTop());
+    //Bind the check to scroll event
+    var scrollHandler = function(){
+      var myScroll = $(window).scrollTop();
+      checkSectionSelected(myScroll);
+    };
 
-    $(window).scroll(function(){
-        checkSectionSelected($(window).scrollTop());
-    });
+    $(window).on("scroll", scrollHandler);
 
   }); // EOF document.ready()
 
